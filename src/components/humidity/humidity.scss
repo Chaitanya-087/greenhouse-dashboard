@@ -1,0 +1,16 @@
+.tooltip {
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: white;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-size: 14px;
+    h4{
+        font-weight: 400;
+    }
+    h6{
+        font-weight: 400;
+        float: right;
+    }
+}

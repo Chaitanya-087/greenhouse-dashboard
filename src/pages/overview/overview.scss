@@ -1,0 +1,80 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .widgets {
+    display: flex;
+    gap: 20px;
+    .widget {
+        display: flex;
+        flex: 1;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 10px;
+        height: 100px;
+        width: 100%;
+        flex-direction: column;
+        justify-content:space-between ;
+      .title {
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: rgb(160, 160, 160);
+      }
+      .value {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-shadow: 0 2px 6px rgb(0 0 0 / 25%);
+      }
+      .value[data-stat='0']{
+        color: red;
+      }
+      .value[data-stat='1']{
+        color:green;
+      }
+      .icon{
+        align-self: flex-end;
+        background-color: rgba(128, 128, 128, 0.614);
+        padding: 2px;
+        border-radius: 4px;
+      }
+      .therm {
+        color: rgb(255,25,25);
+        background-color: rgba(255, 25, 25, 0.2);
+      }
+      .air {
+        color: rgb(23, 177, 238);
+        background-color: rgba(135, 207, 235, 0.2);
+      }
+      .status{
+        color: green;
+        background-color: rgba(0, 255, 0, 0.2);
+      }
+      .level {
+        color: rgb(255, 211, 0);
+        background-color: rgba(255, 255, 0, 0.2);
+      }
+      .loading {
+        color: rgb(160, 160, 160);
+      }
+      
+    }
+  }
+  .statistics {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .chart {
+        flex: 1;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+}
+
+// style={{ width: "700px",boxShadow:'0 0 4px 0 rgba(0,0,0,0.5)',borderRadius:'8px',padding:'20px' }}
